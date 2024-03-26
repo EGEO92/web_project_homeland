@@ -1,0 +1,29 @@
+.intro {
+  margin: 92px auto;
+}
+
+.intro__wraper {
+  max-width: 1017px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__title {
+  font-weight: 900;
+  font-size: 3.3rem;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.intro__quote {
+  max-width: 722px;
+}
+
+.intro__text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 720px;
+}

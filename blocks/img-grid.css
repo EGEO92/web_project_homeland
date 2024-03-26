@@ -1,0 +1,14 @@
+.img_grid {
+  max-width: 100%;
+}
+
+.grid__wraper {
+  margin: 92px 48px;
+  max-width: 1184px;
+  max-height: 442px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 16px;
+  align-content: center;
+}
