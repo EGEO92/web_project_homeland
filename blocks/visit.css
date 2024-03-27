@@ -1,0 +1,8 @@
+.visit {
+  background-image: url(../images/__backgroundvisit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1184px;
+  max-height: 740px;
+  margin: auto;
+}

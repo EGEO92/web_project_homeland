@@ -1,0 +1,77 @@
+.cards {
+  max-width: 984px;
+  margin: 80px 0;
+}
+
+.card__wraper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 152px 460px 48px;
+  grid-column-gap: 1.5em;
+  grid-row-gap: 2em;
+  grid-template-areas:
+    "card__title card__url"
+    "card__image card__texts"
+    "card__button card__texts";
+}
+.card__title {
+  grid-area: card__title;
+  font-weight: 900;
+  font-size: 3.8rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.card__image {
+  grid-area: card__image;
+  width: 460px;
+  height: 460px;
+}
+
+.card__url {
+  grid-area: card__url;
+  align-self: flex-end;
+}
+
+.card__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card__url-heading {
+  color: #aaa;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.card__url-name {
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.card__texts {
+  grid-area: card__texts;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card__text {
+  margin: 0;
+}
+
+.card__button {
+  grid-area: card__button;
+  width: 355px;
+  height: 48px;
+  color: #fff;
+  background-color: #0278fe;
+  border: none;
+  border-radius: 2%;
+}
