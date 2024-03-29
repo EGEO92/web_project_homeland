@@ -13,13 +13,17 @@
     "card__title card__url"
     "card__image card__texts"
     "card__button card__texts";
+
+  margin-bottom: 80px;
 }
+
 .card__title {
   grid-area: card__title;
   font-weight: 900;
   font-size: 3.8rem;
   line-height: 1.2;
   margin: 0;
+  align-self: flex-end;
 }
 
 .card__image {
@@ -74,4 +78,8 @@
   background-color: #0278fe;
   border: none;
   border-radius: 2%;
+}
+
+.card__button:hover {
+  background-color: #0063d2;
 }

@@ -1,8 +1,64 @@
 .visit {
+  max-width: 100%;
+  height: fit-content;
+  position: relative;
+  margin: 92px 48px;
+}
+
+.visit__backimage {
   background-image: url(../images/__backgroundvisit.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1184px;
   max-height: 740px;
+  margin: 0;
+}
+
+.visit__backimage:hover {
+  background-color: #2a2c2f;
+  opacity: 0.4;
+}
+
+.visit__wraper {
+  position: absolute;
+  right: 312px;
+  left: 312px;
+  top: 243px;
+  z-index: 1;
+  max-width: 656px;
+  max-height: 254px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.visit__title {
+  font-weight: 900;
+  font-size: 5rem;
+  margin: 0;
+  text-align: center;
+}
+
+.visit__adress {
+  max-width: 280px;
+  text-align: center;
   margin: auto;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.visit__button {
+  background-color: #0278fe;
+  width: 198px;
+  height: 48px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
+  border: none;
+  border-radius: 2%;
+  margin: auto;
+}
+
+.visit__button:hover {
+  background-color: #0063d2;
 }
