@@ -83,3 +83,56 @@
 .card__button:hover {
   background-color: #0063d2;
 }
+
+@media screen and (max-width: 1024px) {
+  .card__wraper {
+    max-width: 720px;
+  }
+
+  .card__image {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .card__wraper {
+    grid-template-rows: 152px 460px 180px;
+  }
+}
+
+@media screen and (max-width: 663px) {
+  .card__wraper {
+    grid-template-rows: 152px 460px 250px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .card__wraper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+
+  .card__title {
+    font-size: 3rem;
+  }
+
+  .card__texts {
+    margin: 0 16px;
+    gap: 7px;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .card__image {
+    width: 320px;
+    height: 320px;
+  }
+
+  .card__button {
+    width: 288px;
+    font-size: 0.9rem;
+  }
+}
