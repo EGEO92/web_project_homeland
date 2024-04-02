@@ -2,3 +2,142 @@
   max-width: 987px;
   margin: auto;
 }
+
+.places__cards {
+  max-width: 984px;
+  margin: 80px 0;
+}
+
+.places__card-wraper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 152px 460px 48px;
+  grid-column-gap: 1.5em;
+  grid-row-gap: 2em;
+  grid-template-areas:
+    "places__title places__url"
+    "places__image places__texts"
+    "places__button places__texts";
+
+  margin-bottom: 80px;
+}
+
+.places__title {
+  grid-area: places__title;
+  font-weight: 900;
+  font-size: 3.8rem;
+  line-height: 1.2;
+  margin: 0;
+  align-self: flex-end;
+}
+
+.places__image {
+  grid-area: places__image;
+  width: 460px;
+  height: 460px;
+}
+
+.places__url {
+  grid-area: places__url;
+  align-self: flex-end;
+}
+
+.places__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.places__url-heading {
+  color: #aaa;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.places__url-name {
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.places__texts {
+  grid-area: places__texts;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.places__text {
+  margin: 0;
+}
+
+.places__button {
+  grid-area: places__button;
+  width: 355px;
+  height: 48px;
+  color: #fff;
+  background-color: #0278fe;
+  border: none;
+  border-radius: 2%;
+}
+
+.places__button:hover {
+  background-color: #0063d2;
+}
+
+@media screen and (max-width: 1024px) {
+  .places__card-wraper {
+    max-width: 720px;
+  }
+
+  .places__image {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .places__card-wraper {
+    grid-template-rows: 152px 460px 180px;
+  }
+}
+
+@media screen and (max-width: 663px) {
+  .places__card-wraper {
+    grid-template-rows: 152px 460px 250px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .places__card-wraper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+
+  .places__title {
+    font-size: 3rem;
+  }
+
+  .places__texts {
+    margin: 0 16px;
+    gap: 7px;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .places__image {
+    width: 320px;
+    height: 320px;
+  }
+
+  .places__button {
+    width: 288px;
+    font-size: 0.9rem;
+  }
+}
