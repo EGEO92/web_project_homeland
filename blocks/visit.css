@@ -8,8 +8,8 @@
 .visit__backimage {
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%; /*1184px;*/
-  max-height: fit-content; /*740px;*/
+  max-width: 100%;
+  max-height: fit-content;
   margin: 0;
 }
 
@@ -20,15 +20,18 @@
 
 .visit__wraper {
   position: absolute;
-  right: 20%; /*312px;*/
-  left: 20%; /*312px;*/
-  top: 20%; /*243px;*/
+  right: 25%; /*312px;*/
+  left: 25%; /*312px;*/
+  top: 25%; /*243px;*/
   z-index: 1;
   max-width: 656px;
   max-height: 254px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.visit__wraper:hover {
 }
 
 .visit__title {
